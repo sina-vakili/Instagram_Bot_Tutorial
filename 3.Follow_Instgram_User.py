@@ -39,7 +39,7 @@ class InstgramBot:
     def follow_user(self,user):
         self.nav_user(user)
 
-        follow_button = self.driver.find_elements_by_xpath("//button[contains(text(),'Follow')]")[0]
+        follow_button = self.driver.find_elements_by_xpath("//button[contains(text(),'Follow')]")[0]  # ---> For Unfollow Write Following
         follow_button.click()
 
 
