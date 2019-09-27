@@ -74,6 +74,6 @@ class InstgramBot:
 
     #This Is User And Password Part
 if __name__ == '__main__' :
-    ig_bot = InstgramBot('tt690016@gmail.com' , 'mytestaccunt')
+    ig_bot = InstgramBot('username' , 'password')
     ig_bot.like_photo('TractorClub')
 
