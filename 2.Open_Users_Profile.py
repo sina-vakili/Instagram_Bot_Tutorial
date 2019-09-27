@@ -33,7 +33,7 @@ class InstgramBot:
     def nav_user(self,user):
         self.driver.get('{}/{}/'.format(self.base_url , user))
         
-
+        #This Is User And Password Part
 if __name__ == '__main__' :
     ig_bot = InstgramBot('My User Name' , 'My Pass Word')
     ig_bot.nav_user('sina___vakili')
