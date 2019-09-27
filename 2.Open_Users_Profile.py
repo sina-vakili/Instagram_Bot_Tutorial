@@ -7,12 +7,9 @@ import time
 class InstgramBot:
 
     def __init__(self,username , password) :
-        '''
-        Args:
-            usernme:str 
 
-
-        '''
+        #Input Username and Password To App
+        
         self.username = username
         self.password = password
         self.base_url = 'https://www.instagram.com'
@@ -21,7 +18,7 @@ class InstgramBot:
         self.login()
 
 
-
+         #Open Firefox And Login To The Instagram 
     def login(self):
         self.driver.get('{}/accounts/login/?source=auth_switcher'.format(self.base_url))
         time.sleep(10)
@@ -31,7 +28,8 @@ class InstgramBot:
         self.driver.find_elements_by_xpath("//div[contains(text(),'Log In')]")[0].click()
 
         time.sleep(2)
-
+        
+        #Open SomeOnes Profile 
     def nav_user(self,user):
         self.driver.get('{}/{}/'.format(self.base_url , user))
         
